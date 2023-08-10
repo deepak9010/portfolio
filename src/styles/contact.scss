@@ -1,0 +1,64 @@
+#talk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >h1{
+        font-size: 3.3rem;
+        padding-top: 9px;
+        padding-bottom: 12px;
+    }
+
+    >div{
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         align-items: center;
+        width: 60%;
+        background: linear-gradient(90deg,#eecda3, #ef629f );
+        box-shadow: 4px 4px 10px 5px #e47fc1;
+        padding: 14px;
+
+        >h2{
+            font-size: 1.8rem;
+            color: #a40000;
+        }
+       
+      
+    }
+}
+
+
+
+.talk-about{
+    text-align: center;
+    padding-bottom: 8px;
+    >p{
+        font-size: 1.5rem;
+    }
+}
+
+.hi-button{
+    border: 1px solid rgb(238, 113, 113);
+    border-radius: 10px;
+    background-color: #f67156;
+    padding: 1px 14px;
+
+    >a{
+        font-weight: 600;
+        font-size: xx-large;
+    }
+
+}
+
+
+// media query
+@media screen and (max-width: 390px){
+    #talk{
+     >div>h2{
+        font-size: 1.5rem;
+     }
+    }
+  
+}

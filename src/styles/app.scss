@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Pacifico&family=Permanent+Marker&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+    // background: linear-gradient(43deg,#3755ef 0%,#c850c0 46%,#d7a341 100%);
+    background: linear-gradient(90deg,#eecda3, #ef629f );
+    min-height: 100vh;
+}

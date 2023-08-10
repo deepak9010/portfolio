@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import{  BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header,{HeaderPhone } from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+
+import "./styles/header.scss";
+import './styles/mediaquery.scss';
+import "./styles/home.scss";
+import './styles/about.scss';
+import "./styles/skills.scss";
+import "./styles/projects.scss";
+import "./styles/contact.scss";
+
+
+function App(){
+  const [menuOpen,setMenuOpen] = useState(false)
+ console.log(menuOpen);
+
+  return( 
+  <Router>
+      <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+    <Routes>
+       <Route path="/" element={<Home />} />
+       <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+   </Routes>
+  </Router>
+);
 }
 
 export default App;
