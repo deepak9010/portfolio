@@ -29,7 +29,7 @@ const Home = () => {
                 <AiFillLinkedin size={'40px'} />
               </a>
 
-             <a href="https://www.linkedin.com/in/deepak-singh-8a49a5216/" >
+             <a href="https://github.com/deepak9010" >
               <AiFillGithub size={'40px'}/>
              </a>
              

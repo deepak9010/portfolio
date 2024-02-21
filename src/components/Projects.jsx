@@ -2,13 +2,24 @@
 import React from "react";
 
 import cryptoimg from "../assets/crypto.jpg";
-import weatherimg from "../assets/weather.jpg"
+import weatherimg from "../assets/weather.jpg";
+import portfolioimg from "../assets/portimg.jpg"
 
 //Portfolio function
 const Projects = () => {
   const soloProjects = [
     {
       id: 1,
+      title: "Crud App",
+      img: portfolioimg,
+      description:
+        "Design and developed a full-stack web application using the MERN stack to facilitate Create, Read,Update and Delete operations on data.",
+      technologies: "ReactJS | Node.js | Express.js | Express.js",
+      link: "https://crud-mernapp-my77.vercel.app/all",
+      github: "https://github.com/deepak9010/CRUD-mernapp",
+    },
+    {
+      id: 2,
       title: "Crypto-Bhaiya",
       img: cryptoimg,
       description:
@@ -18,7 +29,7 @@ const Projects = () => {
       github: "https://github.com/deepak9010/CryptoBhaiyaa",
     },
     {
-      id: 2,
+      id: 3,
       title: "Weather App",
       img: weatherimg,
       description:
@@ -27,6 +38,7 @@ const Projects = () => {
       link: "https://deepak9010.github.io/weatherApp/",
       github: "https://github.com/deepak9010/weatherApp",
     },
+ 
 
  
 

@@ -4,16 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+     
     >h2{
         font-size: 3.3rem;
         margin: 0.6rem;
     }
    
     >div{
-        width: 70%;
+        width: 80%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 }
